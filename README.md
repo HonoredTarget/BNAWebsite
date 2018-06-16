@@ -1,2 +1,2 @@
 # Bitanny Neighborhood Association Website
-This is the Offical Website for the Bitanny Neighborhood Association
+This is the offical website for the Bitanny Neighborhood Association.
