@@ -1,1 +1,1 @@
-# BNAWebsite
+# Bitanny Neighborhood Association Website
