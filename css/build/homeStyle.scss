@@ -8,5 +8,50 @@ $fontStack: 'Bitter', serif;
 // -----------------------
 
 html, body {
+    width: 100%;
+}
+
+.main {
+    width: 780px;
+    float: right;
+    padding: 10px;
+}
+
+.headr {
+    font-family: $fontStack;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.top {
+    background-color: $primaryColor;
+    color: white;
+}
+
+.bg-company-blue {
+    background-color: $primaryColor;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 12px;
+
+}
+
+.por {
+    width: 250px;
+    padding: 10px;
+    border-right: 1px solid lightgrey;
+}
+
+.picture {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.text {
+    padding-left: 0;
 }
 
