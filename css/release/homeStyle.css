@@ -1,20 +1,3 @@
-.navbar-custom {
-  background-color: #2372b9;
-}
 
-.navbar-custom .navbar-nav .nav-link {
-  color: #ffffff;
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-  color: #ffffff;
-  font-family: "Bitter", serif;
-}
-
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-  color: #d3d3d3;
-}
 
 /*# sourceMappingURL=css/release/homeStyle.css.map */
