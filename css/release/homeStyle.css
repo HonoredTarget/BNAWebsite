@@ -1,11 +1,15 @@
 html, body {
   width: 100%;
+  font-size: 100%;
 }
 
 .main {
-  width: 780px;
-  float: right;
+  width: 100%;
   padding: 10px;
+}
+
+.noSide {
+  padding-right: 0;
 }
 
 .headr {
@@ -26,6 +30,10 @@ html, body {
   background-color: #2372b9;
 }
 
+.picture {
+  margin-right: 0;
+}
+
 .jumbotron {
   margin-top: 20px;
   margin-right: 10%;
@@ -34,18 +42,30 @@ html, body {
 }
 
 .por {
-  width: 250px;
-  padding: 10px;
-  border-right: 1px solid lightgrey;
-}
-
-.picture {
-  margin-right: 0;
-  padding-right: 0;
+  width: 75%;
 }
 
 .text {
-  padding-left: 0;
+  padding: 5px;
+}
+.text h3 {
+  font-family: "Bitter", serif;
+  font-size: 30px;
+}
+
+.bod {
+  padding: 10px;
+  margin-top: 10px;
+}
+.bod .row {
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.community {
+  padding: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=css/release/homeStyle.css.map */
