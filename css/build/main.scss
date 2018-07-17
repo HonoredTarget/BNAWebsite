@@ -1,0 +1,71 @@
+// Colors
+$primaryColor: #2372b9;
+$background: #ffffff;
+$fontStack: 'Bitter', serif;
+//font-family: 'Bitter', serif;
+//font-family: 'Rubik', sans-serif;
+
+// -----------------------
+
+html, body {
+    width: 100%;
+    font-size: 100%;
+    font-family: $fontStack;
+}
+
+
+// Nav Bar
+.main {
+    width: 100%;
+    //width:  780px;
+    //float: right;
+    padding: 10px;
+}
+.noSide {
+    padding-right: 0;
+}
+
+.headr {
+    font-family: $fontStack;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.top {
+    background-color: $primaryColor;
+    color: white;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bg-company-blue {
+    background-color: $primaryColor;
+}
+
+.navbar ul li{
+    font-size: 20px;
+}
+
+// Footer
+.footer {
+    background-color: $primaryColor;
+    color: $background;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.mailing-adress {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.tab {
+    margin-left: 5em
+}
+
+.powered {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Rubik', Impact;
+}
