@@ -69,3 +69,15 @@ html, body {
     margin-bottom: 0;
     font-family: 'Rubik', Impact;
 }
+
+@media only screen and (max-width: 446px) {
+    .headr {
+        font-size: 40px;
+    }
+    .navbar ul li{
+        font-size: 12px;
+    }
+    .noSide {
+        padding-left: 0;
+    }
+}
