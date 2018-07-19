@@ -2,9 +2,10 @@ $(function () {
     $.ajax({
         url: "php/messageboard.php",
         dataType: 'json',
-        async: false,
+        async: true,
         success: function(response) {
-            console.log(response);
+            //console.log(response)
+            $("#cont").html(response);
         },
 
     });
