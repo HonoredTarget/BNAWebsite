@@ -72,5 +72,12 @@ html, body {
     padding-left: 0;
   }
 }
+.bod {
+  text-align: center;
+  padding: 10px;
+}
+.bod h2 {
+  margin-bottom: 310px;
+}
 
 /*# sourceMappingURL=css/release/eventStyle.css.map */

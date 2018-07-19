@@ -1,2 +1,28 @@
 @import "main";
 // --------------
+
+.col-md-12 {
+    text-align: center;
+    padding: 10px;  
+    margin-top: 20px;
+    border: 1px solid #8b8b8b;
+    border-radius: 12px;
+}
+
+.date {
+    text-align: left;
+}
+
+.mainText {
+    text-align: left;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 446px) {
+    .col-md-12 {
+        border: none;
+    }
+}

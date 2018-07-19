@@ -72,5 +72,22 @@ html, body {
     padding-left: 0;
   }
 }
+.bod h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 148, 148, 0.788);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #2372b9;
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=css/release/contactStyle.css.map */
