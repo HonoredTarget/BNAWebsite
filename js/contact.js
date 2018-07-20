@@ -10,6 +10,10 @@ $(function () {
                 },
 
             });
+            $("#email").val("");
+            $("#subject").val("");
+            $("#phone").val("");
+            $("#content").val("")
             alert("Your Form Has Been Submitted");
         } else {
             alert("Please Fill In All Fields");
