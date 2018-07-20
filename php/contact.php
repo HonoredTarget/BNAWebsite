@@ -20,8 +20,7 @@ else {
     $contactForm = "Contact Information:<br>Email: " . $email;
 }
 
-$formCont = $contactForm . "<br><h3><b>" . $subject . "</b></h3><br><h4>" . $content . "</h4>";
-//$contactForm + "\n\n" + $subject + "\n\n" + $content;
+$formCont = $contactForm . "<br><br><b style='font-size:20px;'>" . $subject . "</b><p style='font-size:16px'>" . $content . "</p>";
 
 $mail = new PHPMailer();
 $mail->isSMTP();
@@ -39,7 +38,7 @@ $mail->AddAddress('owen@oertell.net');
 
 $mail->Send();
 
-// "Do You Know The Tragedy Of Darth Plagueis THe Wise?"
-echo json_encode($content);
+// 
+echo json_encode("Do You Know The Tragedy Of Darth Plagueis The Wise?");
 
 ?>
