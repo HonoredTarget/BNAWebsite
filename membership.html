@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bitter|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/release/memberStyle.css" />
+    <script src="js/member.js"></script>
 </head>
 
 <body>
@@ -53,28 +54,20 @@
 
     <div class="bod">
         <!-- Main Content-->
-        <h3 class="why">Why Should You Join?</h3>
+        <h3 class="why" id="whyJoin"></h3>
         <div class="container">
 
             <div class="row">
                 <div class="col-md-8">
-                    <p>There's a lady who's sure All that glitters is gold And she's buying a stairway to heaven When she gets
-                        there she knows If the stores are all closed With a word she can get what she came for Oh oh oh oh
-                        and she's buying a stairway to heaven There's a sign on the wall But she wants to be sure 'Cause
-                        you know sometimes words have two meanings In a tree by the brook There's a songbird who sings Sometimes
-                        all of our thoughts are misgiving Ooh, it makes me wonder Ooh, it makes me wonder There's a feeling
-                        I get When I look to the west And my spirit is crying for leaving In my thoughts I have seen Rings
-                        of smoke through the trees And the voices of those who standing looking</p>
+                    <p id="whyText"></p>
                 </div>
-                <div class="col-md-4">
-                    <img class="why-pic" src="img/whyJoin.jpg" alt="">
+                <div class="col-md-4" id="whyPic">
                 </div>
             </div>
         </div>
         <h3 class="why">Application</h3>
         <div class="container">
             <div class="form">
-                <form>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="John">
@@ -87,7 +80,7 @@
 
                     <div class="form-group">
                         <label for="InputEmail">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
 
@@ -95,8 +88,7 @@
                         <input type="checkbox" class="form-check-input" id="emailList">
                         <label class="form-check-label" for="emailList">Add To Mailing List</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    <button class="btn btn-primary" id="subForm">Submit</button>
             </div>
         </div>
     </div>
