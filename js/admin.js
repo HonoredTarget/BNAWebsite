@@ -1,8 +1,20 @@
 $(function () {
+    var happy = "false";
     var password;
-    do {
+    while (happy == 'false') {
         password = prompt("Please Enter Password For Admin Access");
-    } while (password != "admin")
+        $.ajax({
+            url: "php/adminPass.php?pass=" + password,
+            dataType: 'json',
+            async: false,
+            success: function (response) {
+                happy = response;
+            },
+        });
+        if (password == 'break') {
+            break;
+        }
+    }
 
     $.ajax({
         url: "php/adminText.php",
