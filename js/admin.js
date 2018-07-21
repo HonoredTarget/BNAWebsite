@@ -4,6 +4,17 @@ $(function () {
         password = prompt("Please Enter Password For Admin Access");
     } while (password != "admin")
 
+    $.ajax({
+        url: "php/adminText.php",
+        dataType: 'json',
+        async: true,
+        success: function (response) {
+            var array = response.split("&&&()");
+            $("#homePageText").val(array[0]);
+            $("#membershipPageText").val(array[1]);
+        },
+    });
+
     $("#sub").click(function () {
         if (confirm("Are You Sure You Would Like To Submit This Message Or Email")) {
             if ($("#title").val() != "" && $("#body").val() != "") {
@@ -14,7 +25,6 @@ $(function () {
                     success: function (response) {
                         console.log(response);
                     },
-
                 });//addToMessageboard sendAsEmail
                 $("#title").val("");
                 $("#subject").val("");
@@ -26,5 +36,17 @@ $(function () {
                 alert("Please Fill In All Fields");
             }
         }
+    });
+
+    $("#saveChanges").click(function () {
+        $.ajax({
+            url: "php/adminSave.php?homePageText=" + $("#homePageText").val().replace(/\n/g, '<br>').replace('&','%26') + "&membershipPageText=" + $("#membershipPageText").val().replace(/\n/g, '<br>').replace('&','%26'),
+            dataType: 'json',
+            async: true,
+            success: function (response) {
+                console.log(response);
+            },
+        });
+        alert("Changes Saved!")
     });
 });

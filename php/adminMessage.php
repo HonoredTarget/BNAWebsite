@@ -17,7 +17,6 @@ $sendAsEmail = $_GET["sendAsEmail"];
 $date = date("h:i a m/d/y");
 $sql;
 
-echo json_encode($addToMessageboard);
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -30,8 +29,10 @@ if ($conn->connect_error) {
 
 if ($addToMessageboard == "on") {
     // Add To Message Board
-    $sql = "INSERT INTO bnawebsite.messageboard (message, title, dateSubmited) VALUES ('$body', '$title', '$date');";
-    echo json_encode($sql);
+    $editBody = addslashes($body);
+    $editTitle = addslashes($title);
+
+    $sql = "INSERT INTO bnawebsite.messageboard (message, title, dateSubmited) VALUES ('$editBody', '$editTitle', '$date');";
     $result = mysqli_query($conn, $sql);
 }
 if ($sendAsEmail == "on") {

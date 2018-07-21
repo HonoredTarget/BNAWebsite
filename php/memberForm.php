@@ -1,9 +1,9 @@
 <?php 
 
-$firstName = $_GET["firstName"];
-$lastName = $_GET["lastName"];
-$email = $_GET["email"];
-$addToList = $_GET["addToList"];
+$firstName = addslashes($_GET["firstName"]);
+$lastName =  addslashes($_GET["lastName"]);
+$email =  addslashes($_GET["email"]);
+$addToList =  addslashes($_GET["addToList"]);
 $list = "";
 
 $servername = "localhost";
