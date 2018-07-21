@@ -2,7 +2,7 @@ $(function () {
     $("#sub").click(function () {
         if ($("#email").val() != "" && $("#subject").val() != "" && $("#content").val() != "") {
             $.ajax({
-                url: "php/contact.php?email=" + $("#email").val() + "&phoneNumber=" + $("#phone").val() + "&subject=" + $("#subject").val() + "&content=" + $("#content").val().replace(/\n/g, '<br>'),
+                url: "php/contact.php?email=" + $("#email").val().replace('&','%26') + "&phoneNumber=" + $("#phone").val() + "&subject=" + $("#subject").val().replace('&','%26') + "&content=" + $("#content").val().replace(/\n/g, '<br>').replace('&',"%26"),
                 dataType: 'json',
                 async: true,
                 success: function (response) {

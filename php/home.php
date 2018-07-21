@@ -28,7 +28,7 @@ $sql = "SELECT * FROM bnawebsite.websitetext WHERE identifier = 'homeHead';";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)) {
     $returnString .=  "$row[text]";
-;}
+}
 $returnString .= "&&&()";
 
 // Photo For Jumbotron
@@ -37,7 +37,7 @@ $sql = "SELECT * FROM bnawebsite.websitetext WHERE identifier = 'homePic';";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)) {
     $returnString .=  "<img src='$row[text]' class='por' alt=''>";
-;}
+}
 $returnString .= "&&&()";
 
 // Body For Jumbotron
@@ -45,7 +45,7 @@ $sql = "SELECT * FROM bnawebsite.websitetext WHERE identifier = 'homeBody';";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)) {
     $returnString .=  "<h3>$row[text]</h3>";
-;}
+}
 $returnString .= "&&&()";
 
 
