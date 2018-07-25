@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/release/memberStyle.css" />
     <script src="js/member.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122824498-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122824498-1');
+    </script>
 </head>
 
 <body>
@@ -68,27 +77,27 @@
         <h3 class="why">Application</h3>
         <div class="container">
             <div class="form">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="John">
-                    </div>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                </div>
 
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Doe">
-                    </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                </div>
 
-                    <div class="form-group">
-                        <label for="InputEmail">Email Address</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
+                <div class="form-group">
+                    <label for="InputEmail">Email Address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="emailList">
-                        <label class="form-check-label" for="emailList">Add To Mailing List</label>
-                    </div>
-                    <button class="btn btn-primary" id="subForm">Submit</button>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="emailList">
+                    <label class="form-check-label" for="emailList">Add To Mailing List</label>
+                </div>
+                <button class="btn btn-primary" id="subForm">Submit</button>
             </div>
         </div>
     </div>
