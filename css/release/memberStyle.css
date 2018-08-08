@@ -29,6 +29,7 @@ html, body {
 
 .bg-company-blue {
   background-color: #2372b9;
+  padding-bottom: 16px;
 }
 
 .navbar ul li {
@@ -98,4 +99,4 @@ html, body {
   margin-bottom: 5px;
 }
 
-/*# sourceMappingURL=css/release/memberStyle.css.map */
+/*# sourceMappingURL=release/memberStyle.css.map */

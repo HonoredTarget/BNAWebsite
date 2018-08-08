@@ -29,6 +29,7 @@ html, body {
 
 .bg-company-blue {
   background-color: #2372b9;
+  padding-bottom: 16px;
 }
 
 .navbar ul li {
@@ -98,4 +99,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=css/release/messageboardStyle.css.map */
+/*# sourceMappingURL=release/messageboardStyle.css.map */
