@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     echo json_encode("Connection To Server Failed");
 }
 // Message Board Messages
-$sql = "SELECT * FROM bnawebsite.messageboard ORDER BY idmessageboard DESC LIMIT 2;";
+$sql = "SELECT * FROM bnawebsite.messageboard ORDER BY idmessageboard DESC LIMIT 4;";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)) {
     $returnString .= "<div class='mess'>";

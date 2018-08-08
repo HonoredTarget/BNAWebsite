@@ -15,7 +15,7 @@ html, body {
 
 .headr {
   font-family: "Bitter", serif;
-  font-size: 60px;
+  font-size: 50px;
   padding: 10px;
 }
 
@@ -98,4 +98,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=css/release/messageboardStyle.css.map */
+/*# sourceMappingURL=release/messageboardStyle.css.map */
