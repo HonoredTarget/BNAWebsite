@@ -59,7 +59,7 @@ html, body {
   font-family: "Rubik", Impact;
 }
 
-@media only screen and (max-width: 446px) {
+@media only screen and (max-width: 1020px) {
   .headr {
     font-size: 40px;
   }
@@ -90,4 +90,4 @@ html, body {
   color: #ffffff;
 }
 
-/*# sourceMappingURL=release/contactStyle.css.map */
+/*# sourceMappingURL=css/release/contactStyle.css.map */
